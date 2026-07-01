@@ -1,0 +1,239 @@
+.task-board {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.task-input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.task-input-section input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+  border: 1px solid hsl(216, 12%, 84%);
+  border-radius: 8px;
+}
+
+.task-input-section select {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.task-input-section button {
+  padding: 10px 18px;
+  background: hsl(221, 83%, 53%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-input-section button:hover {
+  background: hsl(224, 76%, 48%);
+}
+
+.search-bar {
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid hsl(216, 12%, 84%);
+}
+
+.task-group {
+  margin-bottom: 35px;
+}
+
+.task-group h2 {
+  margin-bottom: 15px;
+  color: #374151;
+  border-bottom: 2px solid hsl(220, 13%, 91%);
+  padding-bottom: 6px;
+}
+
+.task-card {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.priority-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.priority {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.priority.high {
+  background: hsl(0, 100%, 95%);
+  color: hwb(0 11% 27%);
+}
+
+.priority.medium {
+  background: hsl(48, 96%, 89%);
+  color: hsl(23, 83%, 31%);
+}
+
+.priority.low {
+  background: hsl(141, 84%, 93%);
+  color: hsl(143, 64%, 24%);
+}
+
+.priority-row select {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.task-item {
+  margin-top: 10px;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-title {
+  flex: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  color: hsl(220, 9%, 46%);
+}
+
+.task-edit-input {
+  flex: 1;
+  padding: 8px;
+}
+
+.delete-btn {
+  background: hsl(0, 84%, 60%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: hsl(0, 72%, 51%);
+}
+
+.date-picker {
+  margin-top: 15px;
+}
+
+.date-picker input {
+  margin-left: 10px;
+  padding: 8px;
+}
+
+.subtask-list {
+  margin-top: 20px;
+  border-top: 1px solid hsl(220, 13%, 91%);
+  padding-top: 15px;
+}
+
+.subtask-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.subtask-input input {
+  flex: 1;
+  padding: 8px;
+}
+
+.subtask-input button {
+  background: hsl(221, 83%, 53%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.subtask-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subtask-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subtask-item span {
+  flex: 1;
+}
+
+.completed-subtask {
+  text-decoration: line-through;
+  color: hsl(220, 9%, 46%);
+}
+
+.delete-subtask-btn {
+  background: hsl(0, 84%, 60%);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.delete-subtask-btn:hover {
+  background: hsl(0, 72%, 51%);
+}
+
+.empty-subtasks {
+  color: hsl(220, 9%, 46%);
+  font-style: italic;
+}
+
+.empty-state {
+  text-align: center;
+  color: hsl(220, 9%, 46%);
+  padding: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .task-input-section {
+    flex-direction: column;
+  }
+
+  .priority-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .task-header {
+    flex-wrap: wrap;
+  }
+
+  .subtask-input {
+    flex-direction: column;
+  }
+}

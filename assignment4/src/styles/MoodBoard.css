@@ -1,0 +1,74 @@
+.mood-board{
+    max-width:900px;
+    margin:auto;
+}
+
+.mood-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.mood-form select,
+.mood-form textarea{
+    padding:10px;
+    border:1px solid hsl(0, 0%, 80%);
+    border-radius:8px;
+    font-size:16px;
+}
+
+.mood-form textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+.mood-form button{
+    width:180px;
+    background:hsl(221, 83%, 53%);
+    color:white;
+}
+
+.mood-form button:hover{
+    background:hsl(224, 76%, 48%);
+}
+
+.mood-form button:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.mood-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.mood-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.mood-card h3{
+    margin-bottom:10px;
+}
+
+.mood-card p{
+    margin-bottom:10px;
+}
+
+.mood-card small{
+    color:hsl(220, 9%, 46%);
+}
+
+.mood-card button{
+    margin-top:15px;
+    background:hsl(0, 84%, 60%);
+    color:white;
+}
+
+.mood-card button:hover{
+    background:hsl(0, 72%, 51%);
+}

@@ -1,0 +1,62 @@
+.goal-tracker{
+    max-width:900px;
+    margin:auto;
+}
+
+.goal-input{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.goal-input input{
+    flex:1;
+}
+
+.goal-list{
+    display:grid;
+    gap:20px;
+}
+
+.goal-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.goal-card h3{
+    cursor:pointer;
+    margin-bottom:15px;
+}
+
+.goal-card input[type="range"]{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.goal-card button{
+    margin-top:10px;
+    background:hsl(0, 84%, 60%);
+    color:white;
+}
+
+.goal-input button:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.goal-card p{
+    font-weight:bold;
+    color:hsl(221, 83%, 53%);
+}
+
+.goal-card input{
+    width:100%;
+    padding:8px;
+    margin-bottom:15px;
+}
+
+.goal-card button:hover{
+    background:hsl(0, 72%, 51%);
+}

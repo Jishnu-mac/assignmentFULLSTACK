@@ -1,0 +1,57 @@
+.focus-timer{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.timer-display{
+    font-size:72px;
+    font-weight:bold;
+    margin:30px 0;
+    color:hsl(221, 83%, 53%);
+}
+
+.timer-controls{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.timer-controls button{
+    background:hsl(221, 83%, 53%);
+    color:white;
+}
+
+.timer-controls button:hover{
+    background:hsl(224, 76%, 48%);
+}
+
+.timer-settings,
+.focus-task{
+    margin:25px 0;
+}
+
+.timer-settings input,
+.focus-task select{
+    width:220px;
+    padding:10px;
+    margin-top:10px;
+}
+
+.current-focus{
+    margin-top:30px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-focus strong{
+    color:hsl(221, 83%, 53%);
+}
+
+.current-focus p{
+    margin-top:10px;
+    font-size:20px;
+}
